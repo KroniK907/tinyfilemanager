@@ -285,7 +285,9 @@ if(!empty($favicon_path)) {
 // Clean page title
 if(!empty($page_title)) {
     $page_title = trim($page_title);
-} else { $page_title = 'H3K | Tiny File Manager' }
+} else {
+    $page_title = 'H3K | Tiny File Manager';
+}
 
 defined('FM_SHOW_HIDDEN') || define('FM_SHOW_HIDDEN', $show_hidden_files);
 defined('FM_ROOT_PATH') || define('FM_ROOT_PATH', $root_path);
